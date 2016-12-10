@@ -101,7 +101,7 @@ Put this in a controller (usually home controller).
     <httpRuntime targetFramework="4.5.1" />
   </system.web>
 ```
-Replace the ```cs <system.web> ``` tag with the above code in the web.config
+Replace the ``` <system.web> ``` tag with the above code in the web.config
 
 ###### Startup.Auth
 ```cs
@@ -161,7 +161,7 @@ public void ConfigureAuth(IAppBuilder app)
 ```
 
 ###### Authorizing
-Add an ```cs [Authorize]``` at the top of the ActionResult method to show a view.
+Add an ``` [Authorize] ``` at the top of the ActionResult method to show a view.
 
 
 
