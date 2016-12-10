@@ -100,8 +100,14 @@ Put this in a controller (usually home controller).
     <compilation debug="true" targetFramework="4.5.1" />
     <httpRuntime targetFramework="4.5.1" />
   </system.web>
+  
+    <system.webServer>
+    <modules>
+      <!--<remove name="FormsAuthentication" /> -->
+    </modules>
+  </system.webServer>
 ```
-Replace the ``` <system.web> ``` tag with the above code in the web.config
+Replace the ``` <system.web> ``` and ``` <system.webServer> ``` tag with the above code in the web.config
 
 ###### Startup.Auth
 ```cs
