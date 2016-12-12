@@ -263,8 +263,20 @@ namespace REPLACE THIS WITH PROJECT NAME.DAL
 }
 ```
 
+##### Model Validations (RegEx)
+
+```cs
+//Phone Number
+[RegularExpression(@"^[0-9]{0,15}$", ErrorMessage = "PhoneNumber should contain only numbers")]
 
 
+//Email address
+[Email(ErrorMessage = "Bad email")]
+
+
+//Zip code (matches 12345 and 12345-5432)
+[RegularExpression(@"^\d{5}([\-]\d{4})?$", ErrorMessage = "Invalid Zip Code")]
+```
 
 
 ###### Notes
