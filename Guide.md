@@ -257,6 +257,27 @@ namespace REPLACE THIS WITH PROJECT NAME.DAL
 }
 ```
 
+##### Add to controllers specific code
+
+Add to the controller that you want to use the database with, the following code:
+
+Top
+```cs
+using System.Web.Mvc;
+using blankproject.DAL;
+using blankproject.Models;
+using System.Data.Entity;
+using System.Data;
+```
+
+Public class
+```cs
+public class UsersModelsController : Controller
+    {
+        private ISProject2context db = new ISProject2context();
+```
+
+
 ##### Model Validations (RegEx)
 
 ```cs
