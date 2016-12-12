@@ -1,10 +1,4 @@
-# Login
 
-## Username and Password
-
-##### Step 1
-
-###### Notes
 
 
 # Login
